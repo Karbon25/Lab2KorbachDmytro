@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent serviceIntent = new Intent(this, ObserverService.class);
         startService(serviceIntent);
-//        serviceIntent = new Intent(this, ServiceReadWrite.class);
-//        startService(serviceIntent);
+
 
         CountDownTimer timer = new CountDownTimer(5000, 1000) {
             @Override
@@ -45,5 +44,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, SettingActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onDestroy() {
+        Intent serviceIntent = new Intent(this, ObserverService.class);
+        stopService(serviceIntent);
+        super.onDestroy();
     }
 }

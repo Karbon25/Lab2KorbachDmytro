@@ -31,6 +31,14 @@ public class ObserverService extends Service {
         return super.onStartCommand(intent, flags, startId);
     }
 
+    @Override
+    public void onDestroy() {
+        for(IConnectorObserver client :listConnectionObserver){
+            unregisterClientObserver(client);
+        }
+        super.onDestroy();
+    }
+
     public void regiserClientObserver(IConnectorObserver client) {
         listConnectionObserver.add(client);
         client.onConnectObserver(new ArrayList<>(listResult));
