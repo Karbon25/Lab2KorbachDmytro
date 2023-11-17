@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/setting_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-167dp"
+        tools:layout_editor_absoluteY="-189dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/appName"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_name_player"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="2dp"
+            android:text="Розмір поля"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:id="@+id/setting_game_place_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:checkedButton="@id/r_button_place_3_3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r_button_place_3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3*3" />
+
+            <RadioButton
+                android:id="@+id/r_button_place_4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4*4" />
+
+            <RadioButton
+                android:id="@+id/r_button_place_5_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5*5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_game_place_size"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:text="Час"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:id="@+id/setting_game_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:checkedButton="@id/r_button_time_15"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r_button_time_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15" />
+
+            <RadioButton
+                android:id="@+id/r_button_time_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30" />
+
+            <RadioButton
+                android:id="@+id/r_button_time_45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="45" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_game_time"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:text="Час реакції"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:id="@+id/setting_reaction_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:checkedButton="@id/r_button_time_reaction_1000_1500"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r_button_time_reaction_1000_1500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1-1.5с" />
+
+            <RadioButton
+                android:id="@+id/r_button_time_reaction_700_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.7-1с" />
+
+            <RadioButton
+                android:id="@+id/r_button_time_reaction_500_700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.5-0.7с" />
+
+            <RadioButton
+                android:id="@+id/r_button_time_reaction_300_600"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.3-0.6с" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_start_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_reaction_time"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="140dp"
+            android:text="Почати гру" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:text="Ім'я"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/setting_name_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_show_results"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_start_game"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="105dp"
+            android:text="Список результатів"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

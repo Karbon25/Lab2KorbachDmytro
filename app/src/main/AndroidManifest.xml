@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab2KorbachDmytro"
+        tools:targetApi="31">
+        <service
+            android:name=".Service.ObserverService"
+            android:enabled="true"
+            android:exported="false"
+            ></service>
+        <service
+            android:name=".Service.ServiceReadWrite"
+            android:exported="false" />
+
+        <activity
+            android:name=".ShowResult.ViewListResult"
+            android:exported="false"/>
+        <activity
+            android:name=".GamePlace.GamePlace5x5"
+            android:exported="false"/>
+        <activity
+            android:name=".GamePlace.GamePlace4x4"
+            android:exported="false" />
+        <activity
+            android:name=".GamePlace.GamePlace3x3"
+            android:exported="false"/>
+        <activity
+            android:name=".GamePlace.TimeToStartGame"
+            android:exported="false"/>
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePlace.GamePlace5x5">
+    <RelativeLayout
+        android:id="@+id/game_5x5_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/time_place_5x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="369dp"
+            android:layout_height="550dp"
+            android:layout_below="@+id/time_place_5x5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_place_5x5_1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_2"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_3"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_4"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_5"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_place_5x5_6"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_7"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_8"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_9"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_10"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_place_5x5_11"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_12"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_13"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_14"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_15"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_place_5x5_16"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_17"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_18"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_19"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_20"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_place_5x5_21"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_22"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_23"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_24"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/button_place_5x5_25"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_game_gray"
+                    android:importantForAccessibility="no"
+                    tools:ignore="VisualLintButtonSize" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/score_place_5x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_place_5x5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="0dp"
+            android:text="Рахунок: 0"
+            android:textAlignment="center" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
